@@ -5,6 +5,7 @@ import com.application.bookstore.domain.request.BookRequest;
 import com.application.bookstore.domain.response.BookListResponse;
 import com.application.bookstore.domain.response.BookResponse;
 import com.application.bookstore.service.BookService;
+import io.swagger.annotations.Api;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -13,6 +14,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
+@Api(tags = "Book Rest Api")
 public class BookController {
 
     private final BookService bookService;
