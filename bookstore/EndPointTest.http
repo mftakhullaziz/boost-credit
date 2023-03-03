@@ -1,0 +1,38 @@
+### CREATE BOOK
+POST http://localhost:8000/books
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "The Pragmatic Programmer",
+  "author": "Andrew Hunt and David Thomas",
+  "price": 200000,
+  "isbn": "ISBN-0-201-61622-X"
+}
+
+### UPDATE BOOK BY REQUEST AND ID
+PUT http://localhost:8000/books/8
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "The Pragmatic Programmer",
+  "author": "Andrew Hunt and David Thomas",
+  "price": 800000,
+  "isbn": "ISBN-0-201-61622-X"
+}
+
+### FIND BOOK BY ID
+GET http://localhost:8000/books/8
+Accept: application/json
+Content-Type: application/json
+
+### FIND ALL BOOK
+GET http://localhost:8000/books
+Accept: application/json
+Content-Type: application/json
+
+### DELETE BY ID
+DELETE http://localhost:8000/books/1
+Accept: application/json
+Content-Type: application/json
